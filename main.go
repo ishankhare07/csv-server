@@ -13,11 +13,13 @@ import (
 )
 
 func getCSVData(key string) (string, error) {
-	file, err := os.Open("test.csv")
+	file, err := os.Open("Corpus.csv")
 
 	if err != nil {
-		fmt.Println("cannot open file", err)
+		panic(fmt.Sprintf("%s", err))
 	}
+
+	defer file.Close()
 
 	r := csv.NewReader(file)
 
@@ -26,7 +28,7 @@ func getCSVData(key string) (string, error) {
 
 	for record, err = r.Read(); err != io.EOF; record, err = r.Read() {
 		if err != nil {
-			fmt.Println("err: ", err)
+			panic(fmt.Sprintf("err in reading csv: %s", err))
 		}
 
 		if strings.TrimSpace(record[0]) == key {
