@@ -282,6 +282,10 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/kataras/iris"]
+  input-imports = [
+    "github.com/kataras/iris",
+    "github.com/kataras/iris/middleware/logger",
+    "github.com/kataras/iris/middleware/recover",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
