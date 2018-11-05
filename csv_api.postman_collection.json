@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "dfd4bbed-558c-43c2-9471-82e9cda88f7f",
+		"name": "csv_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_one",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b602a4c-5bbe-4ced-85f6-2675299a3798",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"one\");",
+							"    pm.expect(jsonData.value).to.eql(\"1\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/one",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_three",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "abfcbad4-08c5-40f8-8501-12ef4804c169",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"three\");",
+							"    pm.expect(jsonData.value).to.eql(\"3\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/three",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"three"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_hundred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5f4c6067-2298-4ae3-997a-434dba3702c9",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"hundred\");",
+							"    pm.expect(jsonData.value).to.eql(\"100\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/hundred",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"hundred"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_five",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ad8d6c47-661f-472d-b4e5-1541ff393b87",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"five\");",
+							"    pm.expect(jsonData.value).to.eql(\"5\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/five",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"five"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_twenty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d0c23d73-731b-40e4-8347-68790c221ca4",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"twenty\");",
+							"    pm.expect(jsonData.value).to.eql(\"20\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/twenty",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"twenty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_fifty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b87132e-21eb-47f2-bb8c-456192c6713b",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"fifty\");",
+							"    pm.expect(jsonData.value).to.eql(\"50\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/fifty",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"fifty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_seven",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9dd6bf16-0d46-4267-b40d-c833735f8851",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.key).to.eql(\"seven\");",
+							"    pm.expect(jsonData.value).to.eql(\"7\")",
+							"})",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:80/seven",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"seven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_non_existing",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc79eb45-9449-4fa6-ba76-1b2a851cc3e5",
+						"exec": [
+							"pm.test(\"response is ok\", () => {",
+							"    var jsonData = pm.response.json()",
+							"    pm.expect(jsonData.error).to.eql(\"Not Found!\");",
+							"})",
+							"",
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:80/key",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"key"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
